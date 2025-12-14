@@ -16,9 +16,9 @@ function App() {
       message = "tekst ma odpowiednia długość";  
 
     function handleChange(event) {
-        setTitle(event.target.value);
-        //console.log(event.target.value);              
-    }
+      setTitle(event.target.value);
+      //console.log(event.target.value);              
+    }    
 
     return (
       <div>
@@ -28,6 +28,7 @@ function App() {
             title.length > 0 && <div>{message}</div>
           }
           <input type="text" onChange={handleChange}/>
+          <button onClick={() => alert(title)}>Pokaż tytuł filmu</button>
       </div>
     );
 }
