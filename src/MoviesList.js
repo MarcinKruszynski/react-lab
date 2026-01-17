@@ -1,5 +1,8 @@
 
 export default function MoviesList({movies}) {
+    if (!movies || movies.length === 0) {
+        return null;
+    }
 
     return <div>
         <h2>Titles</h2>
